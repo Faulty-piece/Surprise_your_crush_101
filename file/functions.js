@@ -87,7 +87,7 @@ function timeElapse(date) {
 	if (window.innerWidth <= 480) {
 	  result = "<span class=\"digit\">" + days + "</span>d <span class=\"digit\">" + hours + "</span>h <span class=\"digit\">"+ minutes + "</span>m <span class=\"digit\">" + seconds + "</span>s";
 	} else {
-	  result = "Days <span class=\"digit\">" + days + "</span> Hours <span class=\"digit\">" + hours + "</span> Minutes <span class=\"digit\">"+ minutes + "</span> Seconds <span class=\"digit\">" + seconds + "</span>";
+	  result = "<span class=\"digit\">" + days + "</span> Days <span class=\"digit\">" + hours + "</span> Hours <span class=\"digit\">"+ minutes + "</span> Minutes <span class=\"digit\">" + seconds + "</span> Seconds";
 	}
 	
 	$("#clock").html(result);
