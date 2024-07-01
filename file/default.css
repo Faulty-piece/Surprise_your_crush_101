@@ -1,4 +1,4 @@
-
+/* 
 body {
   margin: 0;
   padding: 0;
@@ -157,6 +157,192 @@ a {
 
   #message-box {
     font-size: 16px;
+    bottom: 60px;
+  }
+} */
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 14px;
+  font-family: "Reenie Beanie", cursive;
+  color: rgb(0, 252, 4);
+  overflow: auto;
+}
+
+a {
+  color: white;
+  font-size: 14px;
+}
+
+#main {
+  width: 100%;
+}
+
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  min-height: 680px;
+  margin-top: 10px;
+}
+
+#text {
+  width: 100%;
+  max-width: 272px;
+  height: auto;
+  left: 30%;
+  top: 80px;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+#code {
+  display: none;
+  color: rgb(248, 20, 214);
+  font-size: 30px;
+  margin-top: 70px;
+  line-height: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#clock-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 40px;
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+#clock-box a {
+  font-size: 28px;
+  text-decoration: none;
+}
+
+#clock {
+  margin: 0 auto;
+}
+
+#clock .digit {
+  font-size: 48px;
+}
+
+#canvas {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  max-height: 680px;
+}
+
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.say {
+  margin-left: 5px;
+}
+
+.space {
+  margin-right: 150px;
+}
+
+#message-box {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  font-family: "Reenie Beanie", cursive;
+  text-align: center;
+  width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  #wrap {
+    min-height: 100vh;
+  }
+
+  #text {
+    top: 40px;
+    max-width: 200px;
+  }
+
+  #code {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #clock-box {
+    font-size: 24px;
+  }
+
+  #clock .digit {
+    font-size: 36px;
+  }
+
+  #message-box {
+    font-size: 24px;
+    bottom: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+
+  #wrap {
+    min-height: 100vh;
+  }
+
+  #text {
+    top: 30px;
+    max-width: 150px;
+  }
+
+  #code {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #clock-box {
+    font-size: 18px;
+  }
+
+  #clock .digit {
+    font-size: 28px;
+  }
+
+  #message-box {
+    font-size: 20px;
     bottom: 60px;
   }
 }
